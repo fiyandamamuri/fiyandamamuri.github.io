@@ -738,6 +738,22 @@ section {
   }
 }
 
+.tentang_kami {
+  text-align: center;
+}
+
+.content ul {
+  list-style-type: none; /* menghilangkan default bullet point */
+}
+
+.content ul li::before {
+  content: "\2022"; /* kode unicode untuk lingkaran */
+  color: black; /* warna lingkaran */
+  display: inline-block;
+  width: 1em; /* lebar lingkaran */
+  margin-left: -1em; /* menggeser lingkaran ke kiri agar berada di samping teks */
+}
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
